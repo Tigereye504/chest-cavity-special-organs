@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Chest Cavity: Special Organs
 
-## Setup
+Special Organs is an add-on for Chest Cavity which introduces several new organs that have effects beyond just being organs.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+The creeper appendix lets you commit acts of terrorism,
+The rabbit heart helps you go fast,
+and the enderman kidney lets you avoid water.
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Requires Chest Cavity 1.2.2 or above and Fabric API
