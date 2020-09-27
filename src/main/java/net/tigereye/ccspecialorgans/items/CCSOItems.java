@@ -19,8 +19,7 @@ public class CCSOItems {
 
     public static final Item CREEPER_APPENDIX = new CreeperAppendix()
             .setOrganQuality(CCItems.ORGANS_APPENDIX,.75f)
-            .setOrganQuality(ORGANS_CREEPINESS,1)
-            .setOrganQuality(ORGANS_EXPLOSION_YIELD, 9);
+            .setOrganQuality(ORGANS_CREEPINESS,1);
     public static final Item RABBIT_HEART = new OrganBase()
             .setOrganQuality(CCItems.ORGANS_HEART, .25f)
             .setOrganQuality(ORGANS_RABBIT_HEART,1);

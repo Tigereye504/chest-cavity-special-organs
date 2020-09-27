@@ -23,7 +23,13 @@ public class OrganUpdateListeners {
 
     private static void UpdateRabbitHeart(PlayerEntity player, Map<Identifier, Float> oldScores, Map<Identifier, Float> newScores) {
         if(oldScores.getOrDefault(CCSOItems.ORGANS_RABBIT_HEART,0f) != newScores.getOrDefault(CCSOItems.ORGANS_RABBIT_HEART,0f)){
-            EntityAttributeInstance att = player.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED);
+            EntityAttributeInstance att;
+            try {
+                att = player.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED);
+            }
+            catch(NullPointerException e){
+                return;
+            }
             EntityAttributeModifier mod = new EntityAttributeModifier(rabbitHeartID, "ChestCavityRabbitHeartMovementSpeed",
                     newScores.getOrDefault(CCSOItems.ORGANS_RABBIT_HEART, 0f)*.1, EntityAttributeModifier.Operation.MULTIPLY_BASE);
             ReplaceAttributeModifier(att, mod);
