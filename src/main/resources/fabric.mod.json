@@ -29,9 +29,11 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.x",
+    "chestcavity": ">=1.2.5"
   },
   "suggests": {
-    "flamingo": "*"
+    "flamingo": "*",
+    "wendigoism": "*"
   }
 }
